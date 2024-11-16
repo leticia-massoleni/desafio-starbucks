@@ -8,7 +8,58 @@ import elipseAmarelo from "../../assets/elipse-amarelo.png";
 import elipseVermelho from "../../assets/elipse-vermelho.png";
 import elipseVerde from "../../assets/elipse-verde.png";
 import { useState } from "react";
+import styled from "styled-components";
 
+const Main = styled.main`
+    display: flex;
+`
+const H1 = styled.h1`
+    font-weight: 400;
+    font-size: 3rem;
+`
+const P = styled.p`
+    width: 39.5vw;
+    font-size: 1.2rem;
+`
+const Span = styled.span`
+    font-weight: bold;
+    font-size: 3rem;
+    color: #037143;
+`
+const TextSection = styled.section`
+    display: flex;
+    flex-direction: column;
+    margin: 3% 0 0 6%;
+`
+const ImgSection = styled.section`
+    margin: 13.6% 0 0 0.15%;
+    display: flex;
+    align-items: baseline;
+`
+const MainIMG = styled.img`
+    height: 55vh;
+    position: absolute;
+    margin: 8% 0 0 68%;
+`
+const Button = styled.button`
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    background-color: #037143;
+    width: 11vw;
+    height: 5.5vh;
+    padding-top: 0.7%;
+    margin-top: 2%;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+`
+const Elipse = styled.img`
+    height: 55vh;
+`
+const IMG = styled.img`
+    cursor: pointer;
+`
 export default function Home(){
     const [copo, setCopo] = useState(Amarelo2x);
     const [elipse, setElipse] = useState(elipseAmarelo);
@@ -25,19 +76,26 @@ export default function Home(){
         setCopo(Amarelo2x)
         setElipse(elipseAmarelo)
     }
+    
     return(
-        <main>
-            <h1>Mais que Café</h1>
-            <h1>Isso é Starbucks</h1>
-            <p>A Starbucks oferece uma variedade de cafés de alta qualidade. Alguns dos cafés mais populares incluem o Caffè Americano, o Cappuccino, o Latte Macchiato e o Espresso. Além disso, a Starbucks oferece bebidas quentes e frias, doces diferenciados e sanduíches.</p>
-            <button>SAIBA MAIS</button>
-            <img src={copo} alt="Copo Starbucks Amarelo" />
-            <section>
-                <img onClick={mudarAmarelo} src={Amarelo} alt="" />
-                <img onClick={mudarVermelho} src={Vermelho} alt="" />
-                <img onClick={mudarLaranja} src={Laranja} alt="" />
-            </section>
-            <img src={elipse}/>
-        </main>
+        <Main>
+            <MainIMG src={copo} alt="Copo Starbucks Amarelo" />
+            <TextSection>
+                <H1>Mais que Café</H1>
+                <H1>Isso é <Span>Starbucks</Span></H1>
+                <P>A Starbucks oferece uma variedade de cafés de alta</P>
+                <P>qualidade. Alguns dos cafés mais populares incluem o Caffè</P>
+                <P>Americano, o Cappuccino, o Latte Macchiato e o Espresso.</P>
+                <P>Além disso, a Starbucks oferece bebidas quentes e frias,</P>
+                <P>doces diferenciados e sanduíches.</P>
+                <Button>SAIBA MAIS</Button>
+            </TextSection>
+            <ImgSection>
+                <IMG onClick={mudarAmarelo} src={Amarelo}/>
+                <IMG onClick={mudarVermelho} src={Vermelho}/>
+                <IMG onClick={mudarLaranja} src={Laranja}/>
+                <Elipse src={elipse}/>
+            </ImgSection>
+        </Main>
     )
 }
