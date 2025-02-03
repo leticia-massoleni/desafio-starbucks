@@ -1,8 +1,24 @@
-# React + Vite
+<h1 align="center" style="font-weight: bold;">Desafio Starbucks 💻</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<p align="center">
+    <b>Projeto do curso Vai na Web. Esse projeto consiste na recriação visual do site do Starbucks, de forma responsiva, utilizando React e HTML.</b>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+     <a href="https://desafio-starbucks-leticia-magalhaes.vercel.app/">📱 Acesse o site</a>
+</p>
+
+<h2 id="layout">🎨 Layout</h2>
+
+<p align="center">
+    <img src="src/assets/main_page.gif" alt="Main Page" width="400px">
+    <img src="src/assets/news-page.jpg" alt="News Page" width="400px">
+</p>
+
+<h2 id="technologies">💻 Tecnologias</h2>
+
+- React
+- Styled Components
+- HTML
+
