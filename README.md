@@ -13,7 +13,7 @@
 
 <p align="center">
     <img src="src/assets/main_page.gif" alt="Main Page" width="400px">
-    <img src="src/assets/news-page.jpg" alt="News Page" width="400px">
+    <img src="src/assets/news-page.jpg" alt="News Page" width="450px">
 </p>
 
 <h2 id="technologies">💻 Tecnologias</h2>
